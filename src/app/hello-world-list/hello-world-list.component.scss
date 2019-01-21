@@ -1,0 +1,15 @@
+.es-list{
+  font-weight: 500;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  .es-list-field{
+    color: #221e1f;
+    font-size: 16px;
+    transition: all .3s ease;
+    &:hover{
+     text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

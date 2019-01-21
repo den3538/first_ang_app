@@ -1,0 +1,9 @@
+<ul class="es-list">
+  <li class="es-list-field" *ngFor="let phrase of phraseList" (click)="selectElm(phrase)">
+    {{phrase.value}}
+  </li>
+</ul>
+<div class="es-list" *ngIf="selectedLanguage">
+  current language: {{ selectedLanguage}}
+</div>
+<button class="remove-val" *ngIf="selectedLanguage" (click)="removeCurrentVal()">Disable element</button>
