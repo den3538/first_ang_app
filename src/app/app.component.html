@@ -3,6 +3,11 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <app-hello-world-list></app-hello-world-list>
+  <nav>
+    <a routerLink="/hello2" routerLinkActive="active">Hello world list</a>
+    <a routerLink="/list2" routerLinkActive="active">Second list</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <!--<app-hello-world-list></app-hello-world-list>-->
 </div>
 
