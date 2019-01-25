@@ -1,7 +1,7 @@
 <h1 class="title">Display taskList</h1>
-<div class="tasklist-container">
+<div class="tasklist-container" *ngIf="(taskList.length)">
     <ul>
-        <li class="task-item" *ngFor="let task of taskList" id = "{{task.position}}" (click)="toggleTask(task)" [class.done]="task.done">
+        <li class="task-item" *ngFor="let task of taskList"  id = "{{task.position}}" (click)="toggleTask(task)" [class.done]="task.done">
           <div class="task-item-container">
             <span class="task-name">{{task.name}} </span>
             <span class="task-value">{{task.value}}</span>

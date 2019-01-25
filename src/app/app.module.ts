@@ -4,15 +4,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HelloWorldListComponent, List2ComponentComponent} from './lists';
-import {routs} from './lists';
-import {ListsModule} from './lists';
+import { ListsModule, routs} from './lists';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldListComponent,
-    List2ComponentComponent
   ],
   imports: [
     BrowserModule,

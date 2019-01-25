@@ -1,3 +1,21 @@
+//Элемент(тег) компонента
+
+//:host{
+//  background: red;
+//}
+
+//если найдет body то применит стиль
+
+//:host-context(body) h1{
+//  background: blue;
+//}
+
+//Обратится к параграфам во вложенных компонентах и в этом компоненте
+
+//:host /deep/ p{
+// color: yellow;
+//}
+
 .done{
   text-decoration: line-through;
 }
