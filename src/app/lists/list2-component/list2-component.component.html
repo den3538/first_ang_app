@@ -1,0 +1,14 @@
+<h1 class="title">Display taskList</h1>
+<div class="tasklist-container">
+    <ul>
+        <li class="task-item" *ngFor="let task of taskList" id = "{{task.position}}" (click)="toggleTask(task)" [class.done]="task.done">
+          <div class="task-item-container">
+            <span class="task-name">{{task.name}} </span>
+            <span class="task-value">{{task.value}}</span>
+            <input type="checkbox" [checked]="task.done" name='{{task.name}}[done]'>
+            <button class="remove-current-task" (click)="removeCurrentTask(task)">remove</button>
+          </div>
+        </li>
+    </ul>
+  <button class="add-new-task" (click)="addNewTask()">Add Task</button>
+</div>
