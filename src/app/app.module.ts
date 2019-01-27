@@ -19,4 +19,5 @@ import { ListsModule, routs} from './lists';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

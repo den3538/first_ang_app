@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HelloWorldListComponent, List2ComponentComponent, CounterListComponent } from './index';
-import { CounterListComponent } from './counter-list/counter-list.component';
+import {HelloWorldListComponent, List2ComponentComponent, CounterHostComponent, CounterListComponent} from './index';
 
 @NgModule({
     imports: [CommonModule],
-    declarations: [HelloWorldListComponent, List2ComponentComponent, CounterListComponent],
-    exports: [HelloWorldListComponent, List2ComponentComponent, CounterListComponent]
+    declarations: [HelloWorldListComponent, List2ComponentComponent, CounterListComponent, CounterHostComponent],
+    exports: [HelloWorldListComponent, List2ComponentComponent, CounterListComponent, CounterHostComponent]
 })
 export class ListsModule { }

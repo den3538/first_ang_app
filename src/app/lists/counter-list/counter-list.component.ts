@@ -5,23 +5,18 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './counter-list.component.html',
   styleUrls: ['./counter-list.component.scss']
 })
-export class CounterListComponent implements OnInit {
+export class CounterListComponent {
 
   @Input()
-  name = 'Default value';
-
+    name = 'Default value';
   @Input()
-  value = 2;
-
+    currentValue =  2;
   @Input()
-  counterStep = 1;
+    counterStep =  1;
+
 
   esIncrement() {
-    this.value = this.value + this.counterStep;
-  }
-  constructor() { }
-
-  ngOnInit() {
+    this.currentValue = this.currentValue + this.counterStep;
   }
 
 }
