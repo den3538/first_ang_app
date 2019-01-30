@@ -1,4 +1,40 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+$mainColor: #221e1f;
+
+@mixin transition(){
+  -webkit-transition: all .3s ease;;
+  -moz-transition: all .3s ease; ;
+  -ms-transition: all .3s ease; ;
+  -o-transition: all .3s ease; ;
+  transition: all .3s ease; ;
+}
+:host{
+  max-width: 800px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+}
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a{
+    margin: 10px 5px;
+    color: $mainColor;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid $mainColor;
+    font-size: 15px;
+    @include transition;
+
+    &:hover,&.active{
+      background: $mainColor;
+      color: #fff;
+    }
+  }
+}
 h1{
   font-size: 24px;
 }

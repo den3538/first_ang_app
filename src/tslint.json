@@ -7,6 +7,8 @@
             "app",
             "camelCase"
         ],
+      "max-line-length": false,
+      "no-trailing-whitespace": false,
         "component-selector": [
             true,
             "element",
