@@ -1,0 +1,17 @@
+<div class="es-form-wrapper">
+  <div class="es-form-group">
+    <label for="x-value">X value</label>
+    <input type="number" placeholder="Enter x value" id="x-value" [(ngModel)]="xValue"  (ngModelChange)="changeValues()">
+  </div>
+  <div class="es-form-group">
+    <label for="y-value">Y value</label>
+    <input type="number" placeholder="Enter y value" id="y-value" [(ngModel)]="yValue" (ngModelChange)="changeValues()">
+  </div>
+  <div class="es-form-group">
+    <label for="result-value">Result value</label>
+    <input type="number" placeholder="Result" id="result-value" [class.es-disabled]="disabledResult" [value]="resultVal"/>
+  </div>
+  <!--<button class="btn-black" (click)="calculateVal()">Calculate</button>-->
+  <button class="btn-outside-black" (click)="resetCalc()">Reset</button>
+
+</div>
