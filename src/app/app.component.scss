@@ -38,4 +38,80 @@ nav{
 h1{
   font-size: 24px;
 }
+.btn-black{
+  margin: 10px 5px;
+  color: $mainColor;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid $mainColor;
+  font-size: 15px;
+  @include transition;
 
+  &:hover,&.active{
+    background: $mainColor;
+    color: #fff;
+  }
+}
+.btn-outside-black{
+  margin: 10px 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 3px;
+  background: $mainColor;
+  border: 1px solid $mainColor;
+  font-size: 15px;
+  @include transition;
+
+  &:hover,&.active{
+    background: #fff;
+    color: $mainColor;
+  }
+}
+
+/deep/
+.es-form-wrapper{
+  max-width: 600px;
+  padding: 40px;
+  border: 1px solid #e9e9e9;
+  .es-form-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: flex-start;
+    label{
+      flex-basis: 100%;
+      width: 100%;
+      max-width: 100%;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 17px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      color: $mainColor;
+      text-align: left;
+    }
+    input{
+      width: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
+      border: 1px solid #e9e9e9;
+      border-radius: 5px;
+      padding-left: 15px;
+      font-size: 17px;
+      font-family: 'Work Sans', sans-serif;
+      color: $mainColor;
+      height: 40px;
+      transition: all .3s ease;
+      outline: none;
+      box-shadow: none;
+
+      &:hover, &:focus{
+        border: 1px solid #221e1f;
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
